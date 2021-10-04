@@ -7,5 +7,4 @@ HTML = """
 
 
 def home_view(request):
-    print(request)
     return HttpResponse(HTML)
