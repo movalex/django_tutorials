@@ -1,4 +1,4 @@
-"""banner URL Configuration
+"""trydjango URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -19,7 +19,7 @@ from .views import home_view
 
 
 urlpatterns = [
-    path('', home_view),
+    path('', home_view, name='home'),
     path('admin/', admin.site.urls),
 
 

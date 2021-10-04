@@ -1,6 +1,5 @@
 from django.http import HttpResponse
 
-
 HTML = """
 <H1>Hello</H1>
 """
