@@ -120,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-STATIC_ROOT = BASE_DIR / "cdn_test" / "static"
+# STATIC_ROOT = BASE_DIR / "cdn_test" / "static"
 
 
 # Default primary key field type
