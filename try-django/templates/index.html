@@ -1,29 +1,7 @@
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>A Basic HTML5 Template</title>
-  <meta name="description" content="A simple HTML5 Template for new projects.">
-  <meta name="author" content="SitePoint">
-
-  <meta property="og:title" content="A Basic HTML5 Template">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="A simple HTML5 Template for new projects.">
-
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+{% extends "base.html" %}
 
 
-</head>
-
-<body>
-  <!-- your content here... -->
-
-  <H1>{{ title }}</H1>
-
-  <p>{{ content }} with id: {{ id }}</p>
-
-</body>
-</html>
+{% block content %}
+<H1>{{ title }}</H1>
+<p>{{ content }} with id: {{ id }}</p>
+{% endblock content %}
