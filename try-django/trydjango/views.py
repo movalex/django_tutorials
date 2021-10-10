@@ -11,6 +11,7 @@ def home_view(request):
     number = randint(2, 4)
     article_obj = Article.objects.get(id=number)
     context = {
+        "object": article_obj,
         "title": article_obj.title,
         "id": article_obj.id,
         "content": article_obj.content
