@@ -4,4 +4,8 @@
 {% block content %}
 <H1>{{ object.title }}</H1>
 <p>{{ content }} with id: {{ id }}</p>
+<ul>{% for x in my_list %}
+    <li>{{ x }}</li>
+    {% endfor  %}
+</ul>
 {% endblock content %}

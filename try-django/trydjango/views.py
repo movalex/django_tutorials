@@ -10,7 +10,10 @@ from django.template.loader import get_template  # another way to do the same
 def home_view(request):
     number = randint(2, 4)
     article_obj = Article.objects.get(id=number)
+    my_list = [123,412,44,212,664,1223]
+
     context = {
+        "my_list": my_list,
         "object": article_obj,
         "title": article_obj.title,
         "id": article_obj.id,
