@@ -8,9 +8,9 @@ from django.template.loader import get_template  # another way to do the same
 
 
 def home_view(request):
-    number = randint(2, 4)
+    number = randint(1, 6)
     article_obj = Article.objects.get(id=number)
-    my_list = [123,412,44,212,664,1223]
+    my_list = Article.objects.all()
 
     context = {
         "my_list": my_list,
